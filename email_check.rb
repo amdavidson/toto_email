@@ -3,7 +3,8 @@
 require 'net/pop'
 require 'openssl'
 
-require ./passwords
+username = ENV['ECUSER']
+password = ENV['ECPASS']
 
 Net::POP3.enable_ssl(OpenSSL::SSL::VERIFY_NONE)
 Net::POP3.start('pop.gmail.com', 995, username, password) do |pop|
