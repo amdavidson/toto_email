@@ -1,2 +1,4 @@
 passwords.rb
 *.swp
+*.swo
+messages/*
